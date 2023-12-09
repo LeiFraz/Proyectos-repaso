@@ -30,7 +30,8 @@ version 1.0.5
 VERSION 1.1.0 contendrá código JavaScript
 **************************************************************
     - Ver ejercicios de lpl donde se use JS
-    - Formulario (dar validaciones)
+
+    - Formulario de comentario(dar validaciones)
     - ver expresiones regulares
     - Imágenes (Cambiar propiedades, dar estilos)
 
@@ -49,6 +50,14 @@ version 1.1.2
 version 1.1.3
     - Se creó la interfaz de cotizacion de una veterinaria
     - Se añadió js para el cambio de clases y consistencia
+
+versio 1.1.4
+    - se agregó la cotización
+    - SE DEBE AGREGAR QUE SEA POR ANIMAL (puede que para un futuro)
+
+version 1.1.5
+    - se agregó otra web con información de sitios turísticos
+    - tiene galería de imagenes
 
 
 PDF:

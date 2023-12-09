@@ -29,19 +29,9 @@
     <div class="content" id="news">
         <div class="news-section">
             <div class="news-article">
-                <h2 class="title"> Cotizador de la Veterinaria</h2>
+                <h2 class="title"> Cotizador de la Veterinaria (ver el  tema de los precios)</h2>
             
                 <div class="news">
-                    <!-- Tipo de servicio(peluqueria, baño, vacunacion consulta medica, (c/animales, raza y peso) 
-                        limpieza de acuario(dimensiones, cant. peses)) 
-                    
-                        animal domestico (agresivos? son clientes de la veterinaria?)
-                        
-                        Observacion
-                    
-                        sucursales (entrega y retiro), si es acuario (donde se encuentra)
-                    
-                        confirmacion del formulario-->
 
                     <form method="GET" action="index.html" onsubmit="return verificar()">
                         <Label for="servicios"> Servicio de: </Label>
@@ -55,70 +45,89 @@
                         </select>
                         
                         <div id="contenedor"></div>
-                        <div class="campoAnimales" id="campoAnimales"><!--probar con los div con la clase ROW y COL-->
-                            <label for="cantidadAnimales">Cantidad de Animales: </label>
-                            <input type="number" name="cantidadAnimales" id="cantidadAnimales">
-                            <br>
-                            <label for="raza">Raza:</label>
-                            <input type="text" name="raza" id="raza">
-                            <br>
-                            <label for="peso">Peso: </label>
-                            <input type="number" name="peso" id="peso">
-                            <br>
-                            <label> Es animal doméstico? </label>
-                            <input type="radio" name="domestico" id="animalDomestico" value="si"> si
-                            <input type="radio" name="domestico" id="animalNoDomestico" value="no"> no
-                            <br>
-                            <label> Es agresivo? </label>
-                            <input type="radio" name="agresivo" id="animalAgresivo" value="si"> si
-                            <input type="radio" name="agresivo" id="animalNoAgresivo" value="no"> no
-                            <br>
-                            <label> Son clientes de la veterinaria? </label>
-                            <input type="radio" name="cliente" id="clienteSi" value="si"> si
-                            <input type="radio" name="cliente" id="clienteNo" value="no"> no
+                        <div class="campoAnimales" id="campoAnimales">
+                            <div class="col">
+                                <label for="cantidadAnimales">Cantidad de Animales: </label>
+                                <input type="number" name="cantidadAnimales" id="cantidadAnimales">
+                            </div>
+                            <div class="col">
+                                <label for="raza">Raza:</label>
+                                <input type="text" name="raza" id="raza">
+                            </div>
+                            <div class="col">
+                                <label for="peso">Peso: </label>
+                                <input type="number" name="peso" id="peso">
+                            </div>
+                            <div class="col">
+                                <label> Es animal doméstico? </label>
+                                <input type="radio" name="domestico" id="animalDomestico" value="si"> si
+                                <input type="radio" name="domestico" id="animalNoDomestico" value="no"> no
+                            </div>
+                            <div class="col">
+                                 <label> Es agresivo? </label>
+                                <input type="radio" name="agresivo" id="animalAgresivo" value="si"> si
+                                <input type="radio" name="agresivo" id="animalNoAgresivo" value="no"> no
+                            </div>
+                            <div class="col">
+                                <label> Son clientes de la veterinaria? </label>
+                                <input type="radio" name="cliente" id="clienteSi" value="si"> si
+                                <input type="radio" name="cliente" id="clienteNo" value="no"> no
+                            </div>
                         </div>
 
                         <div class="campoAcuario">
-                            <p>Dimensiones del acuario </p>
-                            <label for="altoAcuario">Alto: </label>
-                            <input type="number" name="altoAcuario" id="altoAcuario">
-                            <br>
-                            <label for="anchoAcuario">Ancho: </label>
-                            <input type="number" name="anchoAcuario" id="anchoAcuario">
-                            <br>
-                            <label for="cantPeces">Cantidad de peces: </label>
+                            <div class="col">
+                                <p>Dimensiones del acuario </p>
+                                <label for="altoAcuario">Alto: </label>
+                                <input type="number" name="altoAcuario" id="altoAcuario">
+                            </div>
+                            <div class="col">
+                                <label for="anchoAcuario">Ancho: </label>
+                                <input type="number" name="anchoAcuario" id="anchoAcuario">
+                            </div>
+                            <div class="col">
+                                <label for="cantPeces">Cantidad de peces: </label>
                             <input type="number" name="cantPeces" id="cantPeces">
+                            </div>
                         </div>
 
-                        <label for="observacion"> Tiene alguna observación que deba contarle al veterinario? </label>
-                        <textarea name="observacion" id="observacion"></textarea>
+                        <div class="col">
+                            <label for="observacion"> Tiene alguna observación que deba contarle al veterinario? </label>
+                            <textarea name="observacion" id="observacion"></textarea>
+                        </div>
+                        
                         
                         <div class="campoAnimales">
-                            <p>Sucursales </p>
-                            <label for="sucursalEntrega">Entrega: </label>
-                            <select name="sucursalEntrega" id="sucursalEntrega">
-                                <option value="">---</option>
-                                <option value="0">Veterinaria Central</option>
-                                <option value="1">Sucursal Pueyrredón</option>
-                                <option value="2">Sucursal Km 8</option>
-                                <option value="3">Sucursal Caleta Córdoba</option>
-                                <option value="4">Sucursal Rada Tilly</option>
-                            </select>
-                            <br>
-                            <label for="sucursalRetiro">Retiro: </label>
-                            <select name="sucursalRetiro" id="sucursalRetiro">
-                                <option value="">---</option>
-                                <option value="0">Veterinaria Central</option>
-                                <option value="1">Sucursal Pueyrredón</option>
-                                <option value="2">Sucursal Km 8</option>
-                                <option value="3">Sucursal Caleta Córdoba</option>
-                                <option value="4">Sucursal Rada Tilly</option>
-                            </select>
+                            <div class="col">
+                                <p>Sucursales </p>
+                                <label for="sucursalEntrega">Entrega: </label>
+                                <select name="sucursalEntrega" id="sucursalEntrega">
+                                    <option value="">---</option>
+                                    <option value="0">Veterinaria Central</option>
+                                    <option value="1">Sucursal Pueyrredón</option>
+                                    <option value="2">Sucursal Km 8</option>
+                                    <option value="3">Sucursal Caleta Córdoba</option>
+                                    <option value="4">Sucursal Rada Tilly</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="sucursalRetiro">Retiro: </label>
+                                <select name="sucursalRetiro" id="sucursalRetiro">
+                                    <option value="">---</option>
+                                    <option value="0">Veterinaria Central</option>
+                                    <option value="1">Sucursal Pueyrredón</option>
+                                    <option value="2">Sucursal Km 8</option>
+                                    <option value="3">Sucursal Caleta Córdoba</option>
+                                    <option value="4">Sucursal Rada Tilly</option>
+                                </select>
+                            </div>                            
                         </div>
 
                         <div class="campoAcuario">
-                            <label for="domicilioAcuario">Domicilio donde se encuentra: </label>
-                            <input type="text" name="domicilioAcuario" id="domicilioAcuario">
+                            <div class="col">
+                                <label for="domicilioAcuario">Domicilio donde se encuentra: </label>
+                                <input type="text" name="domicilioAcuario" id="domicilioAcuario">
+                            </div>
                         </div>
                         <div class="centrarBoton">
                             <button class="btn btn-success" type="submit" >Enviar</button>
