@@ -1,0 +1,38 @@
+[
+    {
+        "pais": "México",
+        "lugar": "Cancún",
+        "precio": "$400",
+        "descripcion": "Ciudad planificada mexicana ubicada en el estado de Quintana Roo, cabecera del municipio de Benito Juárez.​"
+    },
+    {
+        "pais": "España",
+        "lugar": "Madrid",
+        "precio": "$400",
+        "descripcion": "La localidad, con categoría histórica de villa, es la capital del Estado y de la Comunidad de Madrid"
+    },
+    {
+        "pais": "Canadá",
+        "lugar": "Ottawa",
+        "precio": "$400",
+        "descripcion": "La capital de Canadá y la cuarta ciudad más grande del país"
+    },
+    {
+        "pais": "Rusia",
+        "lugar": "Moscú",
+        "precio": "$400",
+        "descripcion": "La ciudad es un importante centro político, económico, cultural y científico de Rusia y del continente"
+    },
+    {
+        "pais": "Italia",
+        "lugar": "Roma",
+        "precio": "$400",
+        "descripcion": "Municipio más poblado de Italia y la tercera de la Unión Europea"
+    },
+    {
+        "pais": "Nueva Zelanda",
+        "lugar": "Wellington",
+        "precio": "$400",
+        "descripcion": "La ciudad es un importante centro financiero y de negocios en el país"
+    }
+]

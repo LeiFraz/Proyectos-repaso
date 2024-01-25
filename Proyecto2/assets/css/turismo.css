@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* barra de navegación */
+nav{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4.025rem; /*78.8px*/
+    padding: 0.7rem; /*20px*/
+    box-shadow: 0px 2px 15px rgba(1, 1, 1, 0.4);
+}
+
+.nombre-empresa{
+    float: left;
+    flex: 1;
+    
+}
+
+.contacto{
+    float: right;
+    flex: 1;
+    text-align: right;
+    font-size: 0.75rem; /*12px*/
+    font-weight: 900;
+    margin-right: 2.5rem; /*40*/
+}
+
+.nav{
+    clear: both;
+    list-style: none;
+    text-align: center;
+    word-spacing: 3.125rem; /*50px*/
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 1.25rem;/*20px*/
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav li a:after{
+    display: block;
+    height: 0.125rem;/*2px*/
+    background-color: rgb(15, 99, 167);
+    content: "";
+    width: auto;
+    margin: 0 auto;
+}
+
+
+
+/* imagen de portada */
+.portada{
+    max-height: 400px;
+    max-width: 100%;
+}
+
+.portada-imagen{
+    /* display: inline-block; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../images/andes.jpg); */
+    width: 70%;
+    height: 56vh;
+    margin: 1.25rem auto 0;/*20px*/
+    overflow: hidden;
+    border-radius: 15px;
+    /* background-size: cover; */
+    /* background-position: center ; */
+}
+
+.portada-imagen img{
+   position: relative;
+    width: 100%;
+   height: 400px;
+}
+
+.portada-imagen p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -320%);
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+}
+
+/*infromación simple de la empresa*/
+.contenedor-info-empresa{
+    width: 100%;
+    height: 8.35rem; /*180px*/
+    text-align: center;
+    padding-top: 1.875rem;/*30px*/
+}
+
+.info-empresa h2:after{
+    display: block;
+    height: 0.125rem;/*2px*/
+    width: 6rem;/*96px*/
+    content: '';
+    background-color: rgba(36, 36, 255, 0.76);
+
+    margin: 0 auto;
+    margin-top: 0.3125rem;/*5px*/
+}
+
+.info-empresa pre{
+    font-size: 1.125rem;/*18px*/
+    padding-top: 0.9375rem;/*15px*/
+}
+
+/* galleria */
+.contenedor-gallery{
+    width: 100%;
+    height:24.25rem; /*388px*/
+    overflow: hidden;
+}
+
+.gallery{
+    max-width: 56.25rem; /*900px*/
+    height: 21rem;
+    margin: auto; 
+    margin-top: 1.675rem;  /*26.8px*/
+    border-radius: 0.9375rem; /*15px*/
+    background-color: rgba(128, 128, 128, 0.623);
+    overflow: hidden;
+}
+
+.section{
+    display: inline-block;
+    width: 12.625rem; /*250px*/
+    height: 9.175rem; /*190px*/
+    border-radius: 0.625rem; /*10px*/
+    margin: 0.625rem;/*10px*/
+    overflow: hidden;
+    background-color: black;
+
+    transition: height 1s, background-color 5s;
+}
+
+.section:hover{
+    width: 12.625rem;
+    height: 17.175rem;
+    background-color: rgba(255, 255, 255, 0.445);
+    transition: height 1s, background-color 0s;
+}
+
+.imagenes img{
+    max-width: 250px;
+    height: 200px;
+    transform: scale(1.2);
+    opacity: 0.6;
+    border-radius: 0.625rem;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.imagenes img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.pais,.lugar,.precio,.descripcion{
+    margin: 15px 0 0 20px;
+    font-size: 12px;
+}
+
+/*footer*/
+footer{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5.225rem; /*78.8px*/
+    padding: 0.7rem; /*20px*/
+    box-shadow: 0px 2px 15px rgba(1, 1, 1, 0.4);
+}
+
+.col{
+    display: inline-block;
+    margin-left: 3.875rem; /*62px*/
+    margin-right: 6.125rem; /*98px*/
+    margin-top: 0.3125rem; /*5px*/
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-list a{
+    text-decoration: none;
+}
+
