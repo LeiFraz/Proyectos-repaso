@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+
+@media screen and (max-width: 500px)
+{
+    body {
+        background-color: green;
+        -webkit-background-color: green;
+    }
+}
+
