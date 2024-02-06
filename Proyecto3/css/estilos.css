@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*CONTENEDOR PADRE*/
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),url(../img/mario-von-rotz-n1SdmFGyxd4-unsplash.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu{
+        background: rgba(0,0,0,.1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+
+        .logo{
+            flex: 1 1 auto;
+        }
+            .logo a{
+                color: #fff;
+                font-size: 30px;
+            }
+            .logo a:hover{
+                color: #343434;
+            }
+
+        .nav{
+            flex: 5 1 auto;
+        }
+            .nav a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: #343434;
+            }
+
+        .social{
+            flex: 1 1 auto;
+            display: flex;
+        }
+            .social a{
+                font-size: 18px;
+                color: #fff;
+                padding: 0 5px;
+            }
+            .social a:hover{
+                color: #343434;
+            }
+
+    .texto-principal{
+        background: #f07b3f;
+    }
+
+        h1{
+            background: #FFD460;
+        }
+
+/* SECCION DE ARTICULOS Y PUBLICIDAD */
+.section{
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background: #4e4e6a;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #1F6CB0;
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background: #70A3C4;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background: #f73f52;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background: #FFEA85;
+        }
+
+/* PIE DE PAGINA */
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #E6AF2E;
+        width: 300px;
+    }
+
+/* MEDIA QUERIES */
+/* Cuando el ancho es menor a 800px la seccion pasa a tener todo su contenido en 1 sola columna, uno debajo del otro.
+    Las opciones del menu se ponen en formato de 1 columna.
+    La publicidad/aside  pasa a tener varias columnas*/
+@media all and (max-width: 800px)
+{
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Cuando el ancho es menor a 600px 
+    los articulos pasan a posicionarse en una sola columna, uno debajo del otro*/
+@media all and (max-width: 600px)
+{
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+/* Cuando el ancho es menor a 400px 
+    la publicidad pasa a posicionarse en una sola columna, uno debajo del otro*/
+@media all and (max-width: 400px)
+{
+    .aside{
+        flex-direction: column;
+    }
+}

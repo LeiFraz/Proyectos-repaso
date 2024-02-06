@@ -58,6 +58,8 @@ versio 1.1.4
 version 1.1.5
     - se agregó otra web con información de sitios turísticos
     - tiene galería de imagenes
+    - agrego una etiqueta meta para que el sitio sea responsive y muevo una linea de codigo (estilo.css)
+      al final por estandar
 
 
 PDF:
