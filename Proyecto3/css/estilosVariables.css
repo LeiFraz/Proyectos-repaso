@@ -1,0 +1,16 @@
+:root{
+    --color-principal: blue;
+    --color-secundario: white;
+}
+
+h1{
+    color: var(--color-principal, tomato);
+}
+
+h2{
+    color: var(--color-principal, lightblue);
+}
+
+a{
+    color: var(--color-secundario, green)
+}
