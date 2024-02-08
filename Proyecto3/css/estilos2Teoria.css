@@ -1,0 +1,70 @@
+/*ESTA COMENTADO PARA SABER COMO SE UTILIZA*/
+.grid-container{
+    display: grid;
+    
+    /*CREAR UNA GRILLA/TABLA, COLUMNAS Y FILAS*/
+    /* grid-template-columns: 200px 50% 200px;
+    grid-template-rows: 100px 50px;*/
+
+    /*CREAMOS 2 COLUMNAS CON EL TAMAÑO DE 1 FRACCIÓN (C/COLUMNA VALE 50%, SE REPARTE EL TAMAÑO)*/
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr); */
+
+    /*SEPARACIÓN DE LAS FILAS Y LAS COLUMNAS*/
+    gap: 10px 20px; 
+    
+    /*ESPECIFICO UNA ALTURA PARA LAS FILAS Y SE AJUSTAN AUTOMATICAMENTE*/
+    /*grid-auto-rows: 100px;*/ 
+    /* grid-auto-rows: minmax(100px, auto); */
+
+    /*SI QUEDAN ESPACIOS VACIOS, POR REALIZAR ALGUN POSICIONAMIENTO CON ALGÚN ITEM, SE PUEDE HACER LO SIGUIENTE*/
+    /* grid-auto-flow: row dense; */
+    grid-auto-flow: column dense;
+
+    /*OTRA OPCION ES CREAR EL LAYOUT/PLANTILLA CON GRID-AREA*/
+    grid-template-areas: 
+        "a a a a"
+        "b b c c"
+        "d e e e"    
+    ;
+}
+
+.grid-item{
+    background-color: tomato;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.grid-item:nth-child(1)
+{
+    grid-area: a;
+}
+
+.grid-item:nth-child(2)
+{
+    grid-area: b;
+}
+
+.grid-item:nth-child(3)
+{
+    background-color: blueviolet;
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+    grid-area: c;
+}
+
+.grid-item:nth-child(4)
+{
+    grid-area: d;
+}
+
+.grid-item:nth-child(5)
+{
+    grid-area: e;
+}
