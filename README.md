@@ -9,4 +9,6 @@ Proyecto2 --> Basado un poco en el Proyecto1, pero haciendolo por mi cuenta, fui
 Proyecto3 --> CSS Grid y Media Query para manejar la pagina de manera responsive.
 
 Proyecto4 --> Bootstrap y SASS (cuando trabajamos con SASS usamos Node.Js). CHALLENGE DE FRONTEND MENTOR https://www.frontendmentor.io
+
+Proyecto5 --> Vanilla JavaScript
 ...
