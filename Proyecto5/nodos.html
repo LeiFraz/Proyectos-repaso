@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h3>FRAGMENT (se añaden li a la lista)</h1>
+    <ul id="lista">
+        <li>Lorem, ipsum dolor. ESTATICA</li>
+    </ul>
+
+    <h3>FRAGMENT (se crea el li completo)</h1>
+    <ul id="lista2">
+        
+    </ul>
+
+    <h3>VARIABLE (se crea el li completo con innerhtml y se usa una variable que la llamamos template)</h1>
+    <ul id="lista3">
+        
+    </ul>
+
+    <h3>TEMPLATE (para añadir contenido dinamicamente y con eventos)</h1>
+    <ul id="lista4">
+
+    </ul>
+
+    <template id="liTemplate">
+        <li class="list">
+            <b>Pais: </b>
+            <span class="text-primary"> aqui va el pais</span>
+        </li>
+    </template>
+
+    <script src="javascript/nodos.js"></script>
+</body>
+</html>
