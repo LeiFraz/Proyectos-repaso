@@ -18,7 +18,7 @@ formulario.addEventListener("submit", (e) => {
 /* Delegación de Eventos */
 
 //puede seleccionarse un contenedor como el propio documento si es necesario
-const document = document.querySelector('.container');
+const container = document.querySelector('.container');
 
 document.addEventListener("click", (e) =>
 {
