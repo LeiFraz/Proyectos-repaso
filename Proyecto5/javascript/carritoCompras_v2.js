@@ -8,7 +8,7 @@ const fragment = document.createDocumentFragment();
 // console.log(template)
 
 //almacenamos los productos
-const carritoObj = {};
+const carritoObj = [];
 
 //metodo para añadir productos
 const agregarCarrito = (e) => {
@@ -20,27 +20,29 @@ const agregarCarrito = (e) => {
         cantidad: 1,
     }
 
-    //verificar si ya existe
-    if (carritoObj.hasOwnProperty(producto.titulo))
-    {
-        producto.cantidad = carritoObj[producto.titulo].cantidad + 1;
-    }
+    //verificar si existe el producto dentro del array
+    const indice = carritoObj.findIndex((item) =>
+        item.id === producto.id);
 
-    //añadir al carritoObj
-    carritoObj[producto.titulo] = producto;
+    //agregar al carrito
+    if (indice === -1 ) {
+        carritoObj.push(producto);
+    } else {
+        carritoObj[indice].cantidad ++;
+    }
     
-    pintarCarrito();
-}
+    pintarCarrito(carritoObj);
+} 
 
 
 //pintamos el carrito en el template
-const pintarCarrito = () => {
+const pintarCarrito = (array) => {
 
     //para que no se repitan los productos c/vez que se presiona el boton
     carrito.textContent = "";
 
     //para poder transformar el objeto en un array para poder recorrerlo con un forEach
-    Object.values(carritoObj).forEach(item => {
+    array.forEach(item => {
         //clonamos el template
         const clone = template.content.firstElementChild.cloneNode(true);
         clone.querySelector(".lead").textContent = item.titulo;
