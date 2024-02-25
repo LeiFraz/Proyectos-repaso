@@ -1,3 +1,6 @@
+/* FORM DATA = nos ayuda a capturar facilmente los inputs, en este caso de un formulario.
+    Lo malo de esto, es que no se pueden añadir clases a los inputs, para eso se debe si o si
+    utilizar el querySelector o el getElementById */
 const formulario = document.getElementById("formulario");
 
 formulario.addEventListener('submit', (e) =>
