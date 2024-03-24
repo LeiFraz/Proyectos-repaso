@@ -12,4 +12,6 @@ Proyecto4 --> Bootstrap y SASS (cuando trabajamos con SASS usamos Node.Js). CHAL
 
 Proyecto5 --> Vanilla JavaScript, Manejo de DOM, uso de Templates, web Responsive, Eventos, Expresiones Regulares,
               Callback, Promesas (Async y Await), .then .catch y Try Catch, manejo de FETCH para buscar recursos y API (definicion y aplicación), formulario utilizando POO (clases y objetos), Export, Import, LocalStorage.
+
+Proyecto6 --> Bases para Node.js.
 ...
