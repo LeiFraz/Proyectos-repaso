@@ -1,6 +1,7 @@
 /*  COMANDOS:
     ---------
     NODE = para ejecutar algun archivo (node app)
+    NPM INIT = para iniciar el package.json
     NPM I = para detectar las dependencias del proyecto 
     NPM I DEPENDENCIA = para instalar una dependencia (npm i moment@2.19.1 - una version especifica)
     NPM UPDATE = para actualizar todas las dependencias (npm update moment - una dependencia en especifico)
