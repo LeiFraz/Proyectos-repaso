@@ -1,0 +1,12 @@
+{
+  "name": "servidor-http",
+  "version": "1.0.0",
+  "description": "servidor HTTP",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app"
+  },
+  "author": "Leonardo Paz",
+  "license": "ISC"
+}
