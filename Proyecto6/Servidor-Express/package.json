@@ -1,0 +1,16 @@
+{
+  "name": "servidor-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "files": "nodemon archivos.js",
+    "start": "node app.js"
+  },
+  "author": "Leonardo Paz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
