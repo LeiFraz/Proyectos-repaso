@@ -26,6 +26,7 @@ app.set('views', './views');
 
 
 /* MIDDLEWARE: interceptan la info antes de la respuesta del cliente */
+app.use(express.urlencoded({extended: true}));
 app.use("/", require('./routes/home'));
 app.use("/auth", require('./routes/auth'));
 app.use(express.static(__dirname + '/public'));
